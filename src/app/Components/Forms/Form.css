@@ -1,0 +1,328 @@
+.login-form-cont{
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    border: 2px solid #2796ff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 20px;
+    padding-bottom: 100px; */
+    /* margin-top: 30px;
+    box-shadow:  -23px 23px 47px #0b0b0b,
+             23px -23px 47px #2b2b2b; */
+}
+
+.form-title{
+    text-align: center;
+    margin: 30px;
+    margin-top: 0;
+}
+
+.form-input{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
+    width: calc(80% - 10px);
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    user-select: none;
+    padding-left: 10px;
+    resize: none;
+    transition: 0.3s;
+}
+
+.form-input[type="date"]{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
+    width: calc(80% - 20px);
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    user-select: none;
+    padding-left: 11px;
+    transition: 0.3s;
+    box-sizing: content-box;
+    padding-right: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.form-input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.form-file{
+    width: 90%;
+    border: none;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-file::file-selector-button{
+    width: 50%;
+    background-color: #2796ff;
+    height: 40px;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: content-box;
+}
+
+.form-input:focus{
+    outline: none;
+    border: 2px solid #2796ff;
+    transition: 0.3s;
+}
+
+.form-button{
+    background-color: #2796ff;
+    border: 2px solid #2796ff;
+    width: 80%;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+    font-weight: bolder;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.form-button:hover, .form-file::file-selector-button:hover{
+    background-color: transparent;
+    color: #2796ff;
+    transition: 0.3s;
+}
+
+.loading-button{
+    background-color: transparent;
+    border: 2px solid #2796ff;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+}
+
+.form-logo{
+    width: 90px;
+    height: 90px;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.error{
+    color: rgb(255, 52, 52);
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    user-select: none;
+}
+
+.no-error{
+    margin: 0;
+    padding: 0;
+}
+
+.error-cont{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    display: flex;
+    justify-content: left;
+}
+
+.form-label{
+    font-weight: bolder;
+}
+
+.form-label-cont{
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+.account-txt{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.redirect-txt{
+    color: #2796ff;
+}
+
+.selected-pfp-cont{
+    width: 40px;
+    aspect-ratio: 1/1;
+    border: 2px solid #2796ff;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.selected-pfp{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.file-input-cont{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.form-input-form-post{
+    width: calc(80% + 4px);
+    border: none;
+    height: 44px;
+    box-sizing: content-box;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+.form-input-form-post::-webkit-file-upload-button{
+    font-weight: bold;
+    width: 50%;
+    border: none;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #2796ff;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #2796ff;
+    transition: 0.3s;
+}
+
+.form-input-form-post::-webkit-file-upload-button:hover{
+    background-color: transparent;
+    border: 2px solid #2796ff;
+    color: #2796ff;
+    transition: 0.3s;
+}
+
+.create-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post-cont{
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.post-create-cont{
+    height: 50%;
+    overflow-y: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.post-create-img{
+    margin: auto;
+    width: 90%;
+}
+
+.post-create-cont-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.post-create-img-overlay{
+    content: "";
+    width: 90%;
+    background-color: transparent;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.post-create-img-overlay:hover{
+    content: "Delete";
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+.post-create-img-overlay:hover::after {
+    content: "Delete";
+    color: rgb(255, 52, 52);
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.post-create-img-overlay::after {
+    content: ""; /* Initially hide content */
+}
+
+@media screen and (max-width: 900px) {
+    .login-form-cont{
+        width: 50%;
+    }
+    .post-cont{
+        width: 70%;
+    }
+    .post-create-cont{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-form-cont{
+        width: 70%;
+    }
+    .post-cont{
+        width: 80%;
+    }
+    .post-create-cont{
+        width: 100%;
+    }
+}

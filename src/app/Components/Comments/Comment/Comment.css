@@ -1,0 +1,25 @@
+.comment{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.comment-owner-info{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    align-items: center;
+    height: 40px;
+}
+
+.comment-contents{
+    width: 95%;
+    margin: auto;
+    padding: 0%;
+}
+
+.like-comment{
+    width: 80px;
+    margin-left: 15px;
+}

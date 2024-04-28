@@ -1,0 +1,143 @@
+.post{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding-bottom: 0;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.post-owner-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.post-owner-image{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.owner-user-name{
+    margin-right: 10px;
+}
+
+.date-posted{
+    font-weight: 100;
+    font-size: 10px;
+    padding-top: 2px;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-title{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.post-txt{
+    margin-left: 18px;
+    margin-right: 18px;
+    text-wrap: wrap;
+    width: 90%;
+    white-space: pre-line;
+}
+
+.post-interactions{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid gray;
+    height: 35px;
+    width: 80%;
+    margin: auto;
+}
+
+.like-icon{
+    user-select: none;
+    cursor: pointer;
+    color: white;
+}
+
+/*.liked-like-icon{
+    user-select: none;
+    color: #2796ff;
+    cursor: pointer;
+    /* text-shadow: 1px 1px 3px #00FF75; 
+} */
+
+.interaction-button{
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interaction-button:hover{
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.material-symbols-outlined{
+    margin-right: 5px;
+}
+
+.post-create{
+    width: 60%;
+    padding-top: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.post-img{
+    margin-bottom: 10px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    max-height: 400px;
+}
+
+@media screen and (max-width: 500px) {
+    .post-create{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .post-create{
+        width: 85%;
+    }
+}
+
+/* .animate-like{
+    animation: like-animation 0.4s linear;
+}
+
+@keyframes like-animation {
+    0%{
+        transform: scale(0);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0);
+    }
+} */

@@ -1,0 +1,146 @@
+header{
+    margin: 0;
+    padding: 0;
+    height: 67px;   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
+}
+
+.logo-img {
+    margin-left: 10px;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+}
+
+.not-logged-in-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-login-btn{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    border: 2px solid #2796ff;
+    color: #2796ff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 6px;
+}
+
+.header-signup-btn{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #2796ff;
+    border: 2px solid #2796ff;
+    color: #2b2b2b;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 6px;
+}
+
+.createPostBtn{
+    border: 2px solid #2796ff;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.createPostBtn:hover{
+    width: 150px;
+    transition: 0.3s;
+}
+
+.post-btn-icon{
+    color: #2796ff;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.post-btn-txt{
+    color: white;
+    margin-left: 10px;
+    margin-right: 15px;
+    transform: translateY(-2px);
+}
+
+
+
+.header-user-profile {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.header-user-profile .header-pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2796ff;
+    transition: transform 0.2s ease-out;
+    cursor: pointer;
+}
+
+.header-user-profile .header-pfp:hover {
+    transform: scale(1.05);
+}
+
+.header-user-profile .tooltiptext {
+    visibility: hidden;
+    background-color: #797979;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: calc(50% - 15px); /* Adjust tooltip position vertically */
+    right: calc(100% + 10px); /* Adjust tooltip position horizontally */
+    opacity: 0;
+    transition: 0.3s; /* Add transition for right property */
+}
+
+.header-user-profile:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    right: calc(100% + 20px); /* Adjust tooltip position on hover */
+}
+
+.tooltiptext{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-user-profile .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #797979 transparent transparent;
+}

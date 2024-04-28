@@ -1,0 +1,25 @@
+.user-profile-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    height: 113px;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.user-profile-image{
+    height: 105px;
+    width: 105px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 3px solid #2796ff;
+    margin-right: 40px;
+}
+
+.user-info{
+    height: 100%;
+}

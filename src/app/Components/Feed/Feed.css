@@ -1,0 +1,47 @@
+.post-feed{
+    width: 60%;
+    overflow-y: scroll;
+    margin: auto;
+    height: 75.5vh;
+}
+
+.no-posts{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.feed-title{
+    color: white;
+    margin-left: 20px;
+}
+
+.feed-title-cont{
+    width: 60%;
+    margin: auto;
+}
+
+.page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagination-trigger{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+    .post-feed{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .post-feed{
+        width: 100%;
+    }
+}

@@ -1,0 +1,139 @@
+.comment-modal-overlay{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(22, 22, 22, 0.5);
+
+}
+
+.comment-dialog-open {
+    background-color: rgb(46, 46, 46);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 60%;
+    height: 80%;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }  
+
+.comment-dialog-closed{
+    display: none;
+}
+
+.comment-modal-close-cont{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.comment-modal-close-button{
+    color: white;
+    cursor: pointer;
+}
+
+.comments-cont{
+    width: 90%;
+    overflow-y: scroll;
+    margin: auto;
+    height: 62%;
+}
+
+.new-comment-input-cont-ne{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.new-comment-input-cont{
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.new-comment-input{
+    width: 90%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #2796ff;
+    padding-left: 15px;
+    outline: none;
+}
+
+.new-comment-send-button{
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.new-comment-send-button:hover{
+    color: #2796ff;
+    border-color: #2796ff;
+    transition: 0.2s;
+}
+
+.new-comment-send-icon{
+    text-align: center;
+    user-select: none;
+    transform: translateX(3px);
+}
+
+.no-comments{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-error{
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+    margin-left: 10px;
+}
+
+.no-error{
+    margin: 0;
+    padding: 0;
+}
+
+
+.modal-bottom-ne{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.modal-error{
+    width: 90%;
+    margin: auto;
+    margin-top: 1px;
+}
